@@ -17,12 +17,12 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+    path('', include('pwa.urls')),
     path('',views.dashboard,name='dashboard'),
     path('login',views.my_login,name='login'),
     path('logout',views.my_logout,name='logout'),
