@@ -50,7 +50,7 @@
 <div class="card">
   <div class="title">
     <p class="heading">MANAGER X</p>
-    <h3 class="desc">{{person.month}}</h3>
+    <h3 class="desc">شهر {{person.month}} / {{person.year}}</h3>
   </div>
   <div class="wrapper">
     <div class="color anti-flash-white">
@@ -62,130 +62,117 @@
       <span class="hex">{{person.name}}</span>
     </div>
     <div class="color anti-flash-white">
-      الشهر
-      <span class="hex">{{person.month}}</span>
-    </div>
-    <div class="color night-rider">
-      السنة
-      <span class="hex">{{person.year}}</span>
-    </div>
-    <div class="color anti-flash-white">
       اساسي
-      <span class="hex">{{person.Basic}}</span>
+      <span class="hex">{{person.basic}}</span>
     </div>
     <div class="color night-rider">
-      طبيعه
-      <span class="hex">{{person.nature}}</span>
+      بدل طبيعة 
+      <span class="hex">{{person.ntur_allow}}</span>
     </div>
     <div class="color anti-flash-white">
-      مواصلات
-      <span class="hex">{{person.communications}}</span>
+      بدل مواصلات 
+      <span class="hex">{{person.trnsport_allow}}</span>
     </div>
     <div class="color night-rider">
-      وجبه
-      <span class="hex">{{person.meal}}</span>
+      بدل وجبة 
+      <span class="hex">{{person.meal_allow}}</span>
     </div>
     <div class="color anti-flash-white">
-      تليفون
-      <span class="hex">{{person.phone}}</span>
+      بدل تليفون 
+      <span class="hex">{{person.phone_allow}}</span>
     </div>
     <div class="color night-rider">
       الاجمالي
-      <span class="hex">{{person.Total}}</span>
+      <span class="hex">{{person.total}}</span>
     </div>
-  
   </div>
-  
   <hr>
   <div class="wrapper">
     <div class="color anti-flash-white">
       مكافات
-      <span class="hex">{{person.Bonuses}}</span>
+      <span class="hex">{{person.rwrd}}</span>
     </div>
     <div class="color night-rider">
+      بيان مكأفات  
+      <span class="hex">{{person.rwrd_details}}</span>
+    </div>
+    <div class="color anti-flash-white">
       اضافي
-      <span class="hex">{{person.extra}}</span>
+      <span class="hex">{{person.over_time}}</span>
+    </div>
+    <div class="color night-rider">
+      عدد ساعات الاضافى 
+      <span class="hex">{{person.hours}}</span>
     </div>
     <div class="color anti-flash-white">
       بدلات اخري
-      <span class="hex">{{person.Other_allowances}}</span>
+      <span class="hex">{{person.special_allow}}</span>
     </div>
     <div class="color night-rider">
-      اجمالي الاستحقاقات
-      <span class="hex">{{person.Total_accruals}}</span>
+      بيان البدلات الاخري 
+      <span class="hex">{{person.special_details}}</span>
     </div>
     <div class="color anti-flash-white">
+      اجمالي الاستحقاقات
+      <span class="hex">{{person.total_attidtions}}</span>
+    </div>
+    <div class="color night-rider">
       جزاءات
-      <span class="hex">{{person.Sanctions}}</span>
+      <span class="hex">{{person.penalties}}</span>
+    </div>
+    <div class="color anti-flash-white">
+      بيان الجزاءات 
+      <span class="hex">{{person.pnlts_details}}</span>
     </div>
     <div class="color night-rider">
       غيابات
-      <span class="hex">{{person.Absences}}</span>
+      <span class="hex">{{person.absences}}</span>
     </div>
     <div class="color anti-flash-white">
-      تامينات
-      <span class="hex">{{person.Insurances}}</span>
+      عدد ايام الغياب
+      <span class="hex">{{person.absences_day}}</span>
     </div>
     <div class="color night-rider">
+      تأمينات إجتماعية 
+      <span class="hex">{{person.insurances}}</span>
+    </div>
+    <div class="color anti-flash-white">
       ضريبة دخل
       <span class="hex">{{person.income_tax}}</span>
     </div>
-    <div class="color anti-flash-white">
+    <div class="color night-rider">
       خدمة طبيه
-      <span class="hex">{{person.Medical_service}}</span>
+      <span class="hex">{{person.medical_service}}</span>
+    </div>
+    <div class="color anti-flash-white">
+      سلف
+      <span class="hex">{{person.loans}}</span>
     </div>
     <div class="color night-rider">
-      سلف
-      <span class="hex">{{person.Loans}}</span>
+      خصومات
+      <span class="hex">{{person.deductions_hours}}</span>
     </div>
     <div class="color anti-flash-white">
-      خصومات
-      <span class="hex">{{person.Discounts}}</span>
+      عدد ساعات المخصومة 
+      <span class="hex">{{person.detail_hours}}</span>
     </div>
     <div class="color night-rider">
       سيارة
-      <span class="hex">{{person.car}}</span>
+      <span class="hex">{{person.car_deductions}}</span>
     </div>
     <div class="color anti-flash-white">
       اخري
-      <span class="hex">{{person.another}}</span>
+      <span class="hex">{{person.another_deductions}}</span>
     </div>
     <div class="color night-rider">
       اجمالي الاستقطاعات 
-      <span class="hex">{{person.Total_deductions}}</span>
+      <span class="hex">{{person.total_deductions}}</span>
     </div>
   
   </div>
   <hr>
   <div class="wrapper">
-    <div class="border">صافي الراتب المستحق &nbsp; <span>{{person.Net_salary_payable}}</span></div>
-  </div>
-  <hr>
-  <div class="wrapper">
-    <div class="color anti-flash-white">
-      سلفة شخصية
-      <span class="hex">{{person.personal_loan}}</span>
-    </div>
-    <div class="color night-rider">
-      الصافي
-      <span class="hex">{{person.net}}</span>
-    </div>
-    <div class="color anti-flash-white">
-      ايام المكافئات
-      <span class="hex">{{person.Reward_days}}</span>
-    </div>
-    <div class="color night-rider">
-      عدد ساعات الاضافي
-      <span class="hex">{{person.Overtime_hours}}</span>
-    </div>
-    <div class="color anti-flash-white">
-      عدد ايام الغياب بإذن
-      <span class="hex">{{person.Absence_with_permission}}</span>
-    </div>
-    <div class="color night-rider">
-      عدد ساعات التاخير
-      <span class="hex">{{person.Late_hours}}</span>
-    </div>
+    <div class="border">صافي الراتب المستحق &nbsp; <span>{{person.net_salary}}</span></div>
   </div>
 </div>
 <br>
